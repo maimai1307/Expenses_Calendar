@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+        <div id="header">
+            <a href="#">キャンセル</a>
+            <h1>XX年XX月</h1>
+            <a href="#">保存</a>
+        </div>
+    </header>
+        <div id="container">
+        <form id="form">
+            <div id="title">
+            <label for="title">タイトル：</label>
+            <input type="text" name="title">
+            </div>
+            <div id="type">
+            <label for="type">種類：</label>
+            <select name="type">
+                <option value="private">個人</option>
+                <option value="job">仕事</option>
+                <option value="family">家族</option>
+            </select>
+            </div>
+            <div id="color">
+            <label for="color">色：</label>
+                <input type="radio" name="color" value="red" style="accent-color: #FFCCCC">
+                <input type="radio" name="color" value="blue" style="accent-color: #CCE5FF;">
+                <input type="radio" name="color" value="green" style="accent-color: #E6FFCC;">
+                <input type="radio" name="color" value="pink" style="accent-color: pink">
+                <input type="radio" name="color" value="gray" style="accent-color: gray">
+            </div>
+            <div id="all_day">
+            <label for="all_day">終日</label>
+                <input type="checkbox" name="one_day" value="one_day">
+            </div>
+            <div id="start_day">
+            <label for="start_day">開始</label>
+                <P>XX月XX日</P>
+            </div>
+            <div id="goal_day">
+            <label for="goal_day">終了</label>
+                <p><a href="#">XX月XX日</a></p>
+            </div>
+            <div id="repeat">
+            <label for="repeat">繰り返し</label>
+            <select>
+                <option value="every_day">毎日</option>
+                <option value="every_week">毎週</option>
+                <option value="every_month">毎月</option>
+                <option value="every_year">毎年</option>
+            </select>
+            </div>
+            <!-- 詳細画面拡張 -->
+            <div class="columns">
+                <div class="column m-3">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">メモ帳詳細</p>
+                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content" style="display: none;">
+                            <div class="text_table">
+                                <input type="text" name="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <header class="card-header"><p class="card-header-title">家計簿詳細</p>
+                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content" style="display: none;">
+                            <div class="content">
+                                <form>
+                                    <input type="button" name="支出">支出
+                                    <input type="button" name="収入">収入
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">予算表詳細</p>
+                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content" style="display: none;">
+                            <div class="content">
+                                    <input type="button" name="支出">支出
+                                    <input type="button" name="収入">収入
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <!-- <div id="add_table">
+            <label for="text_table">メモ帳詳細</label>
+                <button id="add" type="button">✙</button>
+            </div>
+            <div id="add_table">
+            <label for="expenses_table">家計簿詳細</label>
+                <button id="add" type="button">✙</button>
+            </div>
+            <div id="add_table">
+            <label for="budget_table">予算表詳細</label>
+                <button id="add" type="button">✙</button>
+            </div> -->
+        </form>
+        </div>
+</body>
+<script>
+    function toggleCard(button) {
+  // 全てのカードコンテンツを取得
+const allCardContents = document.querySelectorAll('.card-content');
+const allIcons = document.querySelectorAll('.card-header-icon i');
+
+  // クリックされたカードのコンテンツとアイコンを取得
+const clickedCardContent = button.closest('.card').querySelector('.card-content');
+const clickedIcon = button.querySelector('i');
+  // クリックされたカードの状態を退避
+var cardStatus = clickedCardContent.style.display;
+
+  // まず全てのカードを閉じる
+// 一度開いたら閉じないようにする
+// allCardContents.forEach(content => {
+//     content.style.display = 'none';
+// });
+allIcons.forEach(icon => {
+    icon.classList.remove('fa-angle-up');
+    icon.classList.add('fa-angle-down');
+});
+
+if (cardStatus === 'none') {
+    // クリックされたカードが閉じていた場合は開く
+    clickedCardContent.style.display = 'block';
+    clickedIcon.classList.remove('fa-angle-down');
+    clickedIcon.classList.add('fa-angle-up');
+} else {
+    // クリックされたカードが開いていた場合は閉じる
+    clickedCardContent.style.display = 'none';
+    clickedIcon.classList.remove('fa-angle-up');
+    clickedIcon.classList.add('fa-angle-down');
+}
+}
+
+</script>
+</html>
