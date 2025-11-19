@@ -28,7 +28,6 @@ INDEX VERSION 1.134+C:\Users\7Java2\Desktop\Expenses_Calendar.卒業制作\.meta
 2006577564.index
 4290609192.index
 3218701318.index
-1321182810.index
 4184717649.index
 2392453051.index
 1037799582.index

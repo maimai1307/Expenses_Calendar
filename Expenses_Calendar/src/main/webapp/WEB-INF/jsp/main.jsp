@@ -71,7 +71,7 @@
 </div> <!-- end container-->
     <div id="footer">
     	<h3>バナー</h3>
-        <a href="#">+</a>
+        <a href="/WEB-INF/jsp/input.jsp">+</a>
     </div>
 </body>
 </html>

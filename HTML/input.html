@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+        <body>
         <header>
         <div id="header">
             <a href="#">キャンセル</a>
@@ -64,7 +65,7 @@
                     <div class="card">
                         <header class="card-header">
                             <p class="card-header-title">メモ帳詳細</p>
-                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">
+                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">↴
                                 <span class="icon">
                                     <i class="fas fa-angle-down" aria-hidden="true"></i>
                                 </span>
@@ -72,13 +73,13 @@
                         </header>
                         <div class="card-content" style="display: none;">
                             <div class="text_table">
-                                <input type="text" name="text">
+                                <input type="textarea" name="msg" cols="40" rows="4" placeholder="書き出し/タイトル">
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <header class="card-header"><p class="card-header-title">家計簿詳細</p>
-                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">
+                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">↴
                                 <span class="icon">
                                     <i class="fas fa-angle-down" aria-hidden="true"></i>
                                 </span>
@@ -87,16 +88,31 @@
                         <div class="card-content" style="display: none;">
                             <div class="content">
                                 <form>
-                                    <input type="button" name="支出">支出
-                                    <input type="button" name="収入">収入
+                                    <div class="expenses">
+                                    <input type="radio" name="expenses" value="out" checked>支出
+                                    <input type="radio" name="expenses" value="in">収入
+                                    </div>
+                                    <div class="amount">
+                                        <label for="amount">金額</label>
+                                        <input type="number" name="number" min="0" value="0" step="1">
+                                    </div>
+                                    <label for="category">カテゴリー</label>
+                                    <div class="category">
+                                        <input type="radio" name="button" value="private_radio">個人
+                                        <input type="radio" name="button" value="job_radio">仕事
+                                        <input type="radio" name="button" value="family_radio">家族
+                                    </div>
+                                    <div class="expenses_title">
+                                        <label for="expenses_title">タイトル</label>
+                                        <input type="text" name="expenses_title">
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">予算表詳細</p>
-                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">
+                        <header class="card-header"><p class="card-header-title">予算表詳細</p>
+                            <button class="card-header-icon" aria-label="more options" onclick="toggleCard(this)">↴
                                 <span class="icon">
                                     <i class="fas fa-angle-down" aria-hidden="true"></i>
                                 </span>
@@ -104,13 +120,29 @@
                         </header>
                         <div class="card-content" style="display: none;">
                             <div class="content">
-                                    <input type="button" name="支出">支出
-                                    <input type="button" name="収入">収入
+                                <form>
+                                    <div class="expenses">
+                                    <input type="radio" name="expenses" value="out" checked>支出
+                                    <input type="radio" name="expenses" value="in">収入
+                                    </div>
+                                    <div class="amount">
+                                        <label for="amount">金額</label>
+                                        <input type="number" name="number" min="0" value="0" step="1">
+                                    </div>
+                                    <label for="category">カテゴリー</label>
+                                    <div class="category">
+                                        <input type="radio" name="button" value="private_radio">個人
+                                        <input type="radio" name="button" value="job_radio">仕事
+                                        <input type="radio" name="button" value="family_radio">家族
+                                    </div>
+                                    <div class="expenses_title">
+                                        <label for="expenses_title">タイトル</label>
+                                        <input type="text" name="expenses_title">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
             <!--  -->
             <!-- <div id="add_table">
