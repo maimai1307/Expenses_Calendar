@@ -3,6 +3,10 @@
 <%
 	ExpensesCalendar ec=(ExpensesCalendar)request.getAttribute("ec");
 %>
+<%
+  String path = request.getContextPath() + "/input";
+%>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -71,7 +75,7 @@
 </div> <!-- end container-->
     <div id="footer">
     	<h3>バナー</h3>
-        <a href="/WEB-INF/jsp/input.jsp">+</a>
+        <a href="<%= path %>">+</a>
     </div>
 </body>
 </html>
