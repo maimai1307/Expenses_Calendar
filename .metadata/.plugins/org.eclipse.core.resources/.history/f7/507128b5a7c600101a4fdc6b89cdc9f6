@@ -1,0 +1,15 @@
+package model;
+
+import java.io.Serializable;
+
+//JavaBeansのルール
+//1,直列可能である(java.io.Serializableを実装している)
+//2,クラスはpublicでパッケージに所属
+//3,publicで引数のないコンストラクタを持つ
+//4,フィールドはカプセル化(隠蔽化)する
+
+public class ExpensesDetails implements Serializable {
+	private  // 
+	private  // 
+	private  // 
+}

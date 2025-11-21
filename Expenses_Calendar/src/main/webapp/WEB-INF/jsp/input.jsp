@@ -3,6 +3,9 @@
   <link rel="stylesheet"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
   <link rel="stylesheet"  href="css/input.css">
+  <%
+  String path = request.getContextPath() + "/main";
+%>
   
 <!DOCTYPE html>
 <html>
@@ -13,7 +16,7 @@
 <body>
         <header>
         <div id="header">
-            <a href="#">キャンセル</a>
+            <a href="<%= path %>">キャンセル</a>
             <h1>XX年XX月</h1>
             <a href="#">保存</a>
         </div>
@@ -145,58 +148,9 @@
                             </div>
                         </div>
                     </div>
-
-            <!--  -->
-            <!-- <div id="add_table">
-            <label for="text_table">メモ帳詳細</label>
-                <button id="add" type="button">✙</button>
-            </div>
-            <div id="add_table">
-            <label for="expenses_table">家計簿詳細</label>
-                <button id="add" type="button">✙</button>
-            </div>
-            <div id="add_table">
-            <label for="budget_table">予算表詳細</label>
-                <button id="add" type="button">✙</button>
-            </div> -->
         </form>
         </div>
 </body>
-<script>
-    function toggleCard(button) {
-  // 全てのカードコンテンツを取得
-const allCardContents = document.querySelectorAll('.card-content');
-const allIcons = document.querySelectorAll('.card-header-icon i');
-
-  // クリックされたカードのコンテンツとアイコンを取得
-const clickedCardContent = button.closest('.card').querySelector('.card-content');
-const clickedIcon = button.querySelector('i');
-  // クリックされたカードの状態を退避
-var cardStatus = clickedCardContent.style.display;
-
-  // まず全てのカードを閉じる
-// 一度開いたら閉じないようにする
-// allCardContents.forEach(content => {
-//     content.style.display = 'none';
-// });
-allIcons.forEach(icon => {
-    icon.classList.remove('fa-angle-up');
-    icon.classList.add('fa-angle-down');
-});
-
-if (cardStatus === 'none') {
-    // クリックされたカードが閉じていた場合は開く
-    clickedCardContent.style.display = 'block';
-    clickedIcon.classList.remove('fa-angle-down');
-    clickedIcon.classList.add('fa-angle-up');
-} else {
-    // クリックされたカードが開いていた場合は閉じる
-    clickedCardContent.style.display = 'none';
-    clickedIcon.classList.remove('fa-angle-up');
-    clickedIcon.classList.add('fa-angle-down');
-}
-}
-
-</script>
+<script src="js/card.js"></script>
 </body>
 </html>

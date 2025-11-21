@@ -40,9 +40,12 @@ Expenses_Calendar
 │
 ├─ src/main/java
 │  ├─ dao
+|  |   └─ Expenses_CalendarDAO
+|  |
 │  ├─ model
 │  │   ├─ ExpensesCalendar.java
-│  │   └─ ExpensesCalendarLogic.java
+|  |   ├─ ExpensesCalendarLogic.java
+│  │   └─ ExpensesDetails.java
 │  │
 │  ├─ servlet
 │  │   ├─ Input.java
@@ -63,6 +66,9 @@ Expenses_Calendar
             ├─ css
             |   ├─ input.css
             |   └─ main.css
+            |
+            ├─ js
+            |   └─ card.js
             |
             ├─ META-INF
             |   └─ MANIFEST.MF
@@ -211,7 +217,7 @@ iPoneカレンダー/メモ帳/家計簿
 ---
   
 ## 実装率
-35%  
+50%  
   
 ---
   

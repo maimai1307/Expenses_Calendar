@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/input.css">
+    <link rel=""
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Document</title>
 </head>
@@ -143,57 +144,7 @@
                             </div>
                         </div>
                     </div>
-
-            <!--  -->
-            <!-- <div id="add_table">
-            <label for="text_table">メモ帳詳細</label>
-                <button id="add" type="button">✙</button>
-            </div>
-            <div id="add_table">
-            <label for="expenses_table">家計簿詳細</label>
-                <button id="add" type="button">✙</button>
-            </div>
-            <div id="add_table">
-            <label for="budget_table">予算表詳細</label>
-                <button id="add" type="button">✙</button>
-            </div> -->
-        </form>
         </div>
 </body>
-<script>
-    function toggleCard(button) {
-  // 全てのカードコンテンツを取得
-const allCardContents = document.querySelectorAll('.card-content');
-const allIcons = document.querySelectorAll('.card-header-icon i');
-
-  // クリックされたカードのコンテンツとアイコンを取得
-const clickedCardContent = button.closest('.card').querySelector('.card-content');
-const clickedIcon = button.querySelector('i');
-  // クリックされたカードの状態を退避
-var cardStatus = clickedCardContent.style.display;
-
-  // まず全てのカードを閉じる
-// 一度開いたら閉じないようにする
-// allCardContents.forEach(content => {
-//     content.style.display = 'none';
-// });
-allIcons.forEach(icon => {
-    icon.classList.remove('fa-angle-up');
-    icon.classList.add('fa-angle-down');
-});
-
-if (cardStatus === 'none') {
-    // クリックされたカードが閉じていた場合は開く
-    clickedCardContent.style.display = 'block';
-    clickedIcon.classList.remove('fa-angle-down');
-    clickedIcon.classList.add('fa-angle-up');
-} else {
-    // クリックされたカードが開いていた場合は閉じる
-    clickedCardContent.style.display = 'none';
-    clickedIcon.classList.remove('fa-angle-up');
-    clickedIcon.classList.add('fa-angle-down');
-}
-}
-
-</script>
+<script src="../JavaScript/card.js"></script>
 </html>
