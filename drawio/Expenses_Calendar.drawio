@@ -1,13 +1,13 @@
 <mxfile host="65bd71144e">
     <diagram id="73E4ZO81XQ4rp3MjxHya" name="画面遷移図">
-        <mxGraphModel dx="649" dy="292" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1442" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="15" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="380" y="135" width="160" height="485" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="4" edge="1">
+                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="2" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="⊕ボタン" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6" vertex="1" connectable="0">
@@ -45,10 +45,15 @@
                         <mxPoint x="550" y="260" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="17" value="メモ帳(画面2)ドロップ可変" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="m-mZ4veXXl9WCBocBPRT-23" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;拡張可変&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="16">
+                    <mxGeometry x="0.1433" y="3" relative="1" as="geometry">
+                        <mxPoint x="13" y="8" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="メモ帳(画面2)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="380" y="260" width="160" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="家計簿(画面2)ドロップ可変" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="18" value="家計簿(画面2)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="380" y="380" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" edge="1">
@@ -64,7 +69,7 @@
                 <mxCell id="IOd0rFIt9XfqPGljpovr-21" value="カレンダー(画面2)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="400" y="520" width="120" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="IOd0rFIt9XfqPGljpovr-24" value="予算表(画面2)ドロップ可変" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="IOd0rFIt9XfqPGljpovr-24" value="予算表(画面2)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="380" y="500" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="IOd0rFIt9XfqPGljpovr-25" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" edge="1">
@@ -74,11 +79,39 @@
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="m-mZ4veXXl9WCBocBPRT-19" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="4" target="2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="340" y="330" as="sourcePoint"/>
+                        <mxPoint x="390" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="m-mZ4veXXl9WCBocBPRT-20" value="キャンセル" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m-mZ4veXXl9WCBocBPRT-19">
+                    <mxGeometry x="-0.0333" y="4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="m-mZ4veXXl9WCBocBPRT-21" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="199.5" as="sourcePoint"/>
+                        <mxPoint x="280" y="199.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="m-mZ4veXXl9WCBocBPRT-22" value="保存" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="m-mZ4veXXl9WCBocBPRT-21">
+                    <mxGeometry x="-0.0333" y="4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="m-mZ4veXXl9WCBocBPRT-24" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;拡張可変&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="560" y="430.0000000000001" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-mZ4veXXl9WCBocBPRT-25" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;拡張可変&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="560" y="550.0000000000001" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="1en_QqFKOI0W5ibvsGcG" name="カレンダー(メイン画面レイアウト)">
-        <mxGraphModel dx="1456" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2471" dy="1013" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -281,7 +314,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="pwia2NTbcePQmpq9iafB" name="入力(サブ画面レイアウト)">
-        <mxGraphModel dx="649" dy="292" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="786" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -602,6 +635,77 @@
                 </mxCell>
                 <mxCell id="_B9ju7FW4wfWodCdaP05-3" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;キャンセル　　　　　　　　　　　　　20XX年XX月XX日　　　　　　　　　　　　　保存&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="120" y="1600" width="560" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="j_JJpim8urQIQ67DqiAi" name="ER図">
+        <mxGraphModel dx="587" dy="1412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-27" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="20" width="790" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-25" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="-210" width="780" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="HLVmRPhQEOemYxT8r5Sb-1" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;・Date(PK)&lt;/div&gt;・C_title&lt;div&gt;・type&lt;/div&gt;&lt;div&gt;・color&lt;/div&gt;&lt;div&gt;・all_day&lt;/div&gt;&lt;div&gt;・start_date&lt;/div&gt;&lt;div&gt;・goal_date&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-21" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="HLVmRPhQEOemYxT8r5Sb-2" target="CfA3K84DQ_zO-UqGGp6L-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="HLVmRPhQEOemYxT8r5Sb-2" value="Calendar_Table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-1" value="&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;・Date(PK)&lt;/span&gt;&lt;/div&gt;・N_title&lt;div&gt;・comment&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="40" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-22" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CfA3K84DQ_zO-UqGGp6L-2" target="CfA3K84DQ_zO-UqGGp6L-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-2" value="Notepad_Table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="40" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-3" value="&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;・Date(PK)&lt;/span&gt;&lt;/div&gt;・E_expenditure&lt;div&gt;・E_Income&lt;/div&gt;&lt;div&gt;・&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;E_&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;category&lt;/span&gt;&lt;/div&gt;&lt;div&gt;・E_title&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="40" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-23" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CfA3K84DQ_zO-UqGGp6L-4" target="CfA3K84DQ_zO-UqGGp6L-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-4" value="Expenses_Table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="40" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-5" value="&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;・Date(PK)&lt;/span&gt;&lt;/div&gt;・B_expenditure&lt;div&gt;・&lt;span style=&quot;color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;B_&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;Income&lt;/span&gt;&lt;/div&gt;&lt;div&gt;・&lt;span style=&quot;color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;B_&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;category&lt;/span&gt;&lt;/div&gt;&lt;div&gt;・B_title&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="40" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-20" style="edgeStyle=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CfA3K84DQ_zO-UqGGp6L-6" target="CfA3K84DQ_zO-UqGGp6L-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-6" value="Budget_Table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="40" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-7" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;(Calendar)&lt;/div&gt;&lt;div&gt;・Date(PK)&lt;/div&gt;・C_title&lt;div&gt;・type&lt;/div&gt;&lt;div&gt;・color&lt;/div&gt;&lt;div&gt;・all_day&lt;/div&gt;&lt;div&gt;・start_date&lt;/div&gt;&lt;div&gt;・goal_date&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="-160" width="360" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-8" value="Expenses_Calendar_Table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="-160" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-9" value="&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;(Notepad)&lt;/div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;・N_title&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;・comment&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="-108" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-11" value="&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;(Expenses)&lt;/div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;・&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;E_&lt;/span&gt;expenditure&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;・&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;E_&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Income&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;・&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;E_&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;category&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;・E_title&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="410.5" y="-101" width="96.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-14" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;(Budget)&lt;/div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;・&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;B_&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;expenditure&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;・&lt;span style=&quot;color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;B_&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Income&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;・&lt;span style=&quot;color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;B_&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;category&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;・B_title&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="499" y="-105" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-28" value="Main" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="-210" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CfA3K84DQ_zO-UqGGp6L-29" value="Input" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="210" width="120" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
