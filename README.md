@@ -1,4 +1,4 @@
-# カレンダーWebアプリ
+# カレンダー複合機能Webアプリ
 
 ## 概要
 個人用カレンダーにメモ帳 / 家計簿 / 予算表 と複数の機能を1つにしたアプリケーションです。  
@@ -86,15 +86,73 @@ Expenses_Calendar
 ---
   
 ## データベース構成
+### ER図
+> ![ER図](./image/ER図.png)  
+  
 ### テーブル定義：Expenses_Calendar
   
 H2DB JDBC URL: jdbc:h2:~/desktop/卒業制作/Expenses_Calendar/h2db/Expenses_Calendar_db  
+  
+Expenses_Calendar_Table
 | カラム名 | 型 | 説明 |
 |----------|----|-----|
-| 未定 | 未定 | 未定 |
+| Date | Date | 主キー |
+| C_title | VARCHAR(100) | カレンダータイトル |
+| type | CHAR(50) | 種別 |
+| color | CHAR(50) | 配色 |
+| all_day | BOOLEAN | 終日 |
+| start_date | DATETIME | 開始時刻 |
+| goal_date | DATETIME | 終了時刻 |
+| N_title | VARCHAR(100) | メモ帳タイトル |
+| comment | VERCHAR(1000) | メモ帳コメント |
+| E_expenditure | INT | 支出金額 |
+| E_income | INT | 収入金額 |
+| E_category | CHAR(50) | カテゴリー |
+| E_title | VERCHER(50) | 家計簿タイトル |
+| B_expenditure | INT | 支出金額 |
+| B_income | INT | 収入金額 |
+| B_category | CHAR(50) | カテゴリー |
+| B_title | VERCHER(50) | 予算表タイトル |
+  
+Calendar_Table
+| カラム名 | 型 | 説明 |
+|----------|----|-----|
+| Date | Date | 主キー |
+| C_title | VARCHAR(100) | カレンダータイトル |
+| type | CHAR(50) | 種別 |
+| color | CHAR(50) | 配色 |
+| all_day | BOOLEAN | 終日 |
+| start_date | DATETIME | 開始時刻 |
+| goal_date | DATETIME | 終了時刻 |
+  
+Notepad_Table
+| カラム名 | 型 | 説明 |
+|----------|----|-----|
+| Date | Date | 主キー |
+| N_title | VARCHAR(100) | メモ帳タイトル |
+| comment | VERCHAR(1000) | メモ帳コメント |
+  
+Expenses_Table
+| カラム名 | 型 | 説明 |
+|----------|----|-----|
+| Date | Date | 主キー |
+| E_expenditure | INT | 支出金額 |
+| E_income | INT | 収入金額 |
+| E_category | CHAR(50) | カテゴリー |
+| E_title | VERCHER(50) | 家計簿タイトル |
+  
+Budget_Table
+| カラム名 | 型 | 説明 |
+|----------|----|-----|
+| Date | Date | 主キー |
+| B_expenditure | INT | 支出金額 |
+| B_income | INT | 収入金額 |
+| B_category | CHAR(50) | カテゴリー |
+| B_title | VERCHER(50) | 予算表タイトル |
   
 ---
   
+
 ## 今後の拡張予定
 - 全体配色 / 文字表現の種類追加  
 - 詳細入力画面のカテゴリーの種類を追加  
