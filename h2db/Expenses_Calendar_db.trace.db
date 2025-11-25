@@ -1,0 +1,16 @@
+2025-11-25 15:15:22.083581+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: SQLステートメントに文法エラーがあります "CREATE TABLE Calendar_Table (\000d\000a    Calendar_Date DATE PRIMARY KEY,\000d\000a    C_title VARCHAR(100),\000d\000a    type VARCHAR(50),\000d\000a    color VARCHAR(50),\000d\000a    all_day BOOLEAN,\000d\000a    start_date DATETIME,\000d\000a    goal_date DATETIME,\000d\000a    [*])"; 期待されるステートメント "identifier"
+Syntax error in SQL statement "CREATE TABLE Calendar_Table (\000d\000a    Calendar_Date DATE PRIMARY KEY,\000d\000a    C_title VARCHAR(100),\000d\000a    type VARCHAR(50),\000d\000a    color VARCHAR(50),\000d\000a    all_day BOOLEAN,\000d\000a    start_date DATETIME,\000d\000a    goal_date DATETIME,\000d\000a    [*])"; expected "identifier"; SQL statement:
+CREATE TABLE Calendar_Table (
+    Calendar_Date DATE PRIMARY KEY,
+    C_title VARCHAR(100),
+    type VARCHAR(50),
+    color VARCHAR(50),
+    all_day BOOLEAN,
+    start_date DATETIME,
+    goal_date DATETIME,
+    ) [42001-232]
+2025-11-25 15:17:57.714775+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: SQLステートメントに文法エラーがあります "SELECT * FROM BUDGET_TABLE CALENDAR_TABLE [*]EXPENSES_CALENDAR_TABLE EXPENSES_TABLE NOTEPAD_TABLE"
+Syntax error in SQL statement "SELECT * FROM BUDGET_TABLE CALENDAR_TABLE [*]EXPENSES_CALENDAR_TABLE EXPENSES_TABLE NOTEPAD_TABLE"; SQL statement:
+SELECT * FROM BUDGET_TABLE CALENDAR_TABLE EXPENSES_CALENDAR_TABLE EXPENSES_TABLE NOTEPAD_TABLE [42000-232]
