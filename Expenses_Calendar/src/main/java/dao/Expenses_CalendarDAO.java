@@ -8,15 +8,17 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.ExpensesDetails;
+
 
 public class Expenses_CalendarDAO {
 	// データベース接続に使用する情報
-	private final String JDBC_URL = ""; // h2dbのサーバーアドレス
+	private final String JDBC_URL = "H2DB JDBC URL: jdbc:h2:~/desktop/Expenses_Calendar/h2db/Expenses_Calendar_db"; // h2dbのサーバーアドレス
 	private final String DB_USER = "sa";
 	private final String DB_PASS = "";
 	
-	public List<Mutter> findAll(){
-		List<Mutter> mutterList = new ArrayList<>();
+	public List<ExpensesDetails> findAll(){
+		List<ExpensesDetails> ExpensesDetailsList = new ArrayList<>();
 		try {
 			Class.forName("org.h2.Driver");
 		} catch (ClassNotFoundException e ) {
@@ -26,7 +28,7 @@ public class Expenses_CalendarDAO {
 		try(Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)){
 			
 			// SELECT文の準備
-			String sql = "SELECT ID, NAME, TEXT FROM MUTTERS ORDER BY ID DESC";
+			String sql = "SELECT * FROM Expenses_Calendar_Table ORDER BY Calendar_Date DESC";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 			
 			// SELECT文を実行
@@ -34,6 +36,8 @@ public class Expenses_CalendarDAO {
 			
 			// SELECT文の結果をArrayListに格納
 			while (rs.next()) {
+				
+				
 				int id = rs.getInt("ID");
 				String userName = rs.getString("NAME");
 				String text = rs.getString("TEXT");
