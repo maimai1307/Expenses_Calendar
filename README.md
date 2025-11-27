@@ -45,7 +45,9 @@ Expenses_Calendar
 │  ├─ model
 │  │   ├─ ExpensesCalendar.java
 |  |   ├─ ExpensesCalendarLogic.java
-│  │   └─ ExpensesDetails.java
+│  │   ├─ ExpensesDetails.java
+|  |   ├─ GetDetailsLogic.java
+|  |   └─ PostDetailsLogic.java
 │  │
 │  ├─ servlet
 │  │   ├─ Input.java
@@ -222,6 +224,6 @@ iPoneカレンダー/メモ帳/家計簿
 ---
   
 ## 最終更新日
-2025-11-25 
+2025-11-26 
   
 ---
